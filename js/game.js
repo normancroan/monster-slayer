@@ -11,7 +11,7 @@ var game = new Vue({
         monster: {
             prefixes: ['Cryptic','Devilish','Cunning','Six-Eyed','Five-Eyed','Fiendish','Rabid','Raging','Horned','Quilled','Ferocious','Shadowy'],
             types: ['Troll','Orc','Rat','Skeleton','Huntress','Zombie','Lizard','Bear','Bat','Owl'],
-            name: 'MONSTER',
+            name: 'UNKNOWN MONSTER',
             health: 100
         }
     },
