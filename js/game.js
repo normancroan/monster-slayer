@@ -1,11 +1,16 @@
 var game = new Vue({
     el: '#app',
     data: {
+        game: {
+            isRunning: false
+        },
         player: {
-            name: 'Norm'
+            name: 'YOU',
+            health: 100
         },
         monster: {
-            name: 'Troll'
+            name: 'TROLL',
+            health: 100
         }
     }
 });
