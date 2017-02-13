@@ -15,7 +15,9 @@ var game = new Vue({
     },
     methods: {
         startGame: function(){
-            this.game.isRunning = true
+            this.game.isRunning = true;
+            this.player.health = 100;
+            this.monster.health = 100;
         }
     }
 });
