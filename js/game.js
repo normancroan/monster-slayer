@@ -12,5 +12,10 @@ var game = new Vue({
             name: 'TROLL',
             health: 100
         }
+    },
+    methods: {
+        startGame: function(){
+            this.game.isRunning = true
+        }
     }
 });
