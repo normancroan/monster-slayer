@@ -9,7 +9,9 @@ var game = new Vue({
             health: 100
         },
         monster: {
-            name: 'TROLL',
+            prefixes: ['Cryptic','Devilish','Cunning','Six-Eyed','Five-Eyed','Fiendish','Rabid','Raging','Horned','Quilled','Ferocious','Shadowy'],
+            types: ['Troll','Orc','Rat','Skeleton','Huntress','Zombie','Lizard','Bear','Bat','Owl'],
+            name: 'MONSTER',
             health: 100
         }
     },
@@ -18,6 +20,10 @@ var game = new Vue({
             this.game.isRunning = true;
             this.player.health = 100;
             this.monster.health = 100;
+            this.spawnMonster();
+        },
+        spawnMonster: function(){
+            this.monster.name = (this.monster.prefixes[Math.floor(Math.random() * this.monster.prefixes.length)]) + ' ' + (this.monster.types[Math.floor(Math.random() * this.monster.types.length)]);
         }
     }
 });
